@@ -2,7 +2,7 @@
   "name": "startnow-node300-ejs-portfolio",
   "version": "1.0.0",
   "description": "\"My personal portfolio\"",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha tests"
   },
