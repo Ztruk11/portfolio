@@ -30,4 +30,6 @@ describe("server.js", function() {
         done();
       });
   });
+
 });
+    process.exit(0);
