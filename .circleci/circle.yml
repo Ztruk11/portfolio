@@ -34,4 +34,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
-      - run: yarn test
+      - run: yarn 
+
+    deployment:
+      staging:
+        branch: master
+        heroku:
+          appname: daniel-kurtz-portfolio
