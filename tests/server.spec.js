@@ -1,13 +1,13 @@
 const chai = require("chai");
 const chaiHttp = require("chai-http");
-const server = require("../server");
+const app = require("../server");
 
 chai.use(chaiHttp);
 const expect = chai.expect;
 
-server.listen(4444);
+app.listen(8080);
 
-describe("server/app.js", function() {
+describe("server.js", function() {
   this.timeout(5000);
   beforeEach(done => {
     done();
@@ -19,7 +19,7 @@ describe("server/app.js", function() {
 
   it("responds to /", done => {
     chai
-      .request(server)
+      .request(app)
       .get("/")
       .end((err, res) => {
         expect(err).not.exist;
