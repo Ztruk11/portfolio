@@ -10,24 +10,22 @@ app.listen(8080);
 describe("server.js", function() {
   this.timeout(5000);
 
-  it("responds to /", done => {
-    chai
+  it("responds to /", () => {
+    return chai
       .request(app)
       .get("/")
       .end((err, res) => {
         expect(err).not.exist;
         expect(res).to.have.status(200);
-        done();
       });
   });
 
-  it("Contains portfolio", done => {
-    chai
+  it("Contains portfolio", () => {
+    return chai
       .request(app)
       .get("/")
       .end((err, res) => {
         expect(JSON.stringify(res.text)).to.contain("Portfolio");
-        done();
       });
   });
 

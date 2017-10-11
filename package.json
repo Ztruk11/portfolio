@@ -2,7 +2,7 @@
   "name": "startnow-node300-ejs-portfolio",
   "version": "1.0.0",
   "description": "\"My personal portfolio\"",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "mocha tests"
   },
@@ -24,7 +24,7 @@
     "express": "^4.16.2",
     "jquery": "^3.2.1",
     "materialize-css": "^0.100.2",
-    "mocha": "^4.0.1",
+    "mocha": "^3.0.1",
     "morgan": "^1.9.0"
   }
 }
